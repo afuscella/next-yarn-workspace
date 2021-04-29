@@ -39,8 +39,19 @@ To make commons objects available for the workspace, start by updating dependenc
 ```
 
 
+### Add dependencies
+
+At the root of the project, add the dependency by pointing on the project that will receive it.
+
+eg.:
+```
+yarn workspace @afuscella/ts-site add next-transpile-modules --dev
+```
+
+
 ### Run project workspace
 
 ```bash
 yarn workspace @afuscella/ts-site dev
 ```
+
