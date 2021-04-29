@@ -9,7 +9,9 @@ const Title = styled.h1`
 export default function Home() {
   return (
     <div>
-      <Button />
+      <Button>
+        Button created in [@afuscella/commons]
+      </Button>
       <Title>
         website using local lib components
       </Title>
