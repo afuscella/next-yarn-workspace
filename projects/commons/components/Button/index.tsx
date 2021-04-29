@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-export function Button() {
+export interface IButton {
+  children: ReactNode | ReactNode[]
+}
+
+export function Button({ children }: IButton) {
   return (
     <button>
-      Button created in [@afuscella/commons]
+      {children}
     </button>
   );
 };
