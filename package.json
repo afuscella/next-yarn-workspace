@@ -8,5 +8,19 @@
     "packages": [
       "projects/*"
     ]
+  },
+  "scripts": {
+    "commit": "cz",
+    "site": "yarn workspace @afuscella/ts-site",
+    "site:dev": "yarn site dev"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^6.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
